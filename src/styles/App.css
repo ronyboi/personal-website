@@ -5,25 +5,8 @@
           box-sizing: border-box;
   font-family: "Maven Pro", sans-serif;
   color: #797a7e;
-  font-size: 40px;
-}
-
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  scroll-snap-align: start;
+  font-size: 30px;
+  line-height: 37px;
 }
 
 .App {
@@ -34,41 +17,67 @@ section {
   height: 100vh;
 }
 
-.top-left {
-  position: relative;
-  width: 150px;
-  height: 325px;
-  left: 150px;
-  top: 150px;
-  font-size: 40px;
-  line-height: 47px;
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.intro {
+  padding: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.top-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: right;
 }
 
 .bottom-right {
-  position: relative;
-  width: 920px;
-  height: 281px;
-  left: 450px;
-  top: 600px;
-  font-size: 40px;
-  line-height: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.bottom-right .name {
+  font-weight: 700;
 }
 /*# sourceMappingURL=App.css.map */
