@@ -4,7 +4,7 @@ export default function Resume() {
   return (
     <div className="inner-resume">
       <a
-        href="/resources/Rohan_Agarwal_CV.pdf"
+        href="/assets/Rohan_Agarwal_CV.pdf"
         target="blank"
         className="inner-resume-href"
       >

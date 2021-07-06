@@ -1,8 +1,8 @@
 import "./styles/App.css";
 import Intro from "./components/Intro";
-import Intro1 from "./components/Intro-1";
-import Intro2 from "./components/Intro-2";
 import Resume from "./components/Resume";
+import Social from "./components/Social";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,7 +20,8 @@ function App() {
         <Resume />
       </section>
       <section id="socials" className="socials">
-        <h1>Socials</h1>
+        <Social />
+        <Footer />
       </section>
     </div>
   );
