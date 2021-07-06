@@ -1,6 +1,28 @@
 $background: #f7f2e7;
 $font: #797a7e;
+$font-old: #797a7e;
+$font-new: #d8d3cd;
+$underline: #797a7e;
+$outline: #e0ece4;
+
+$browser-context: 16;
+/**
+Color Palettes
+#e0ece4
+#d8d3cd
+#797a7e
+#f7f2e7
+**/
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
 $font-size: 30px;
+$line-height: 37px;
+
+// $size: 30;
+// $font-size: em($size);
+// $line-height: em($size + 7);
 
 * {
   padding: 0%;
@@ -8,8 +30,16 @@ $font-size: 30px;
   box-sizing: border-box;
   font-family: "Maven Pro", sans-serif;
   color: $font;
-  font-size: $font-size;
-  line-height: $font-size + 7;
+  line-height: $line-height;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+a {
+  text-decoration: none;
 }
 
 .App {
@@ -19,14 +49,17 @@ $font-size: 30px;
   height: 100vh;
 }
 
-section {
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
 .title {
+  font-size: $font-size;
   display: flex;
   align-items: flex-end;
+}
+
+.resume {
+  font-size: $font-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
@@ -36,6 +69,27 @@ section {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.link {
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: $underline;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.link:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
 }
 
 .top-left {
@@ -51,4 +105,33 @@ section {
   .name {
     font-weight: 700;
   }
+}
+
+.inner-resume {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // top/bottom and left/right
+  padding: 40vh 35vw;
+  border: 3px solid $font-new;
+  span {
+    font-size: $font-size - 20;
+  }
+  .inner-resume-href {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // text to not be shown
+    text-decoration: none;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+}
+
+.inner-resume:hover {
+  background-color: $outline;
 }

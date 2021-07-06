@@ -4,19 +4,29 @@ export default function Intro1() {
   return (
     <div className="top-left">
       <span>
-        <a href="#title">About</a>
+        <a href="#title" className="link">
+          About
+        </a>
       </span>
       <span>
-        <a href="#skills">Skills</a>
+        <a href="#skills" className="link">
+          Skills
+        </a>
       </span>
       <span>
-        <a href="#projects">Projects</a>
+        <a href="#projects" className="link">
+          Projects
+        </a>
       </span>
       <span>
-        <a href="#resume">Resume</a>
+        <a href="#resume" className="link">
+          Resume
+        </a>
       </span>
       <span>
-        <a href="#socials">Socials</a>
+        <a href="#socials" className="link">
+          Socials
+        </a>
       </span>
     </div>
   );
