@@ -1,0 +1,26 @@
+{
+    "Formula 1":{
+        "Name":"Formula 1",
+        "Tech":"React / MongoDB / HTML / CSS",
+        "URL":"www.google.com",
+        "Desc":"A simple statistic displayer!"
+    },
+    "Url Shortener":{
+        "Name":"Url Shortener",
+        "Tech":"React",
+        "URL":"www.google.com",
+        "Desc":"Shorten your URL"
+    },
+    "Personal Website":{
+        "Name":"Personal Website",
+        "Tech":"React",
+        "URL":"www.google.com",
+        "Desc":"More personal website"
+    },
+    "Zoom Chat":{
+        "Name":"Zoom Chat",
+        "Tech":"React",
+        "URL":"www.google.com",
+        "Desc":"Zoom Chat"
+    }
+}

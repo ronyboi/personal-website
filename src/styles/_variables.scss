@@ -1,0 +1,21 @@
+$background: black !default;
+$font: green !default;
+$font-old: #797a7e !default;
+$font-new: #d8d3cd !default;
+$underline: $font !default;
+$outline: #e1f1dd !default;
+$font-size: 35px !default;
+$line-height: 42px;
+$browser-context: 16;
+/**
+Color Palettes
+#e0ece4 
+#d8d3cd
+#797a7e // Font
+#f7f2e7 // Background
+766161
+**/
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}

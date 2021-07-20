@@ -3,6 +3,7 @@ import Intro from "./components/Intro";
 import Resume from "./components/Resume";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <h1>Skills</h1>
       </section>
       <section id="projects" className="projects">
-        <h1>Projects</h1>
+        <Project />
       </section>
       <section id="resume" className="resume">
         <Resume />

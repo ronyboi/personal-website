@@ -4,7 +4,8 @@ export default function Intro2() {
   return (
     <div className="bottom-right">
       <span className="name">Rohan Agarwal</span>
-      <span>Computer Science Student @ McGill University</span>
+      <span>McGill University</span>
+      <span>Computer Science Student</span>
       <span>Looking for Summer 2022 Internships</span>
     </div>
   );

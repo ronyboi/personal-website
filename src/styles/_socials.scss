@@ -1,0 +1,46 @@
+@import "variables";
+
+.socials {
+  font-size: $font-size;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-list {
+  // background-color: $font-new;
+  // border: 10px solid $outline;
+  // border-radius: 75px;
+  // padding: 50px;
+  // margin: 125px;
+  height: 90%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+// linkedin original color : 0077b5
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.social-item {
+  font-size: $font-size - 10;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+
+  background-color: $font-new;
+  border: 10px solid $outline;
+  border-radius: 25px;
+  padding: 45px;
+  margin: 0px;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}

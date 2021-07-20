@@ -1,34 +1,17 @@
-$background: #f7f2e7;
-$font: #797a7e;
-$font-old: #797a7e;
-$font-new: #d8d3cd;
-$underline: #797a7e;
-$outline: #e0ece4;
+@import "socials";
+@import "footer";
+@import "resume";
+@import "skills";
+@import "title";
+@import "projects";
 
-$browser-context: 16;
-/**
-Color Palettes
-#e0ece4
-#d8d3cd
-#797a7e
-#f7f2e7
-**/
-@function em($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}em;
-}
-
-$font-size: 30px;
-$line-height: 37px;
-
-// $size: 30;
-// $font-size: em($size);
-// $line-height: em($size + 7);
+@import "variables";
 
 * {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Source Code Pro", sans-serif;
   color: $font;
   line-height: $line-height;
 }
@@ -48,150 +31,4 @@ a {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-}
-
-.title {
-  font-size: $font-size;
-  display: flex;
-  align-items: flex-end;
-}
-
-.resume {
-  font-size: $font-size;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro {
-  padding: 40px;
-  flex-grow: 1;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.link {
-  position: relative;
-}
-
-.link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 2px;
-  background-color: $underline;
-  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.link:hover::before {
-  left: 0;
-  right: auto;
-  width: 100%;
-}
-
-.top-left {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-}
-
-.bottom-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  .name {
-    font-weight: 700;
-  }
-}
-
-.inner-resume {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  // top/bottom and left/right
-  padding: 40vh 35vw;
-  border: 3px solid $font-new;
-  span {
-    font-size: $font-size - 20;
-  }
-  .inner-resume-href {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    // text to not be shown
-    text-decoration: none;
-    text-indent: -9999px;
-    overflow: hidden;
-  }
-}
-
-.inner-resume:hover {
-  background-color: $outline;
-}
-
-.socials {
-  font-size: $font-size;
-  display: flex;
-  flex-direction: column;
-}
-
-.social-list {
-  // background-color: $font-new;
-  // border: 10px solid $outline;
-  // border-radius: 75px;
-  // padding: 50px;
-  // margin: 125px;
-  height: 90%;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-// linkedin original color : 0077b5
-
-.social-icon {
-  width: 50px;
-  height: 50px;
-}
-
-.social-item {
-  font-size: $font-size - 10;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  text-align: center;
-
-  background-color: $font-new;
-  border: 10px solid $outline;
-  border-radius: 25px;
-  padding: 45px;
-  margin: 0px;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
-}
-
-.footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  font-size: $font-size - 10;
-  padding: 10px;
-  height: 10%;
-}
-
-.footer-name:hover {
-  font-weight: 700;
 }

@@ -1,0 +1,15 @@
+@import "variables";
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: $font-size - 10;
+  padding: 10px;
+  height: 10%;
+}
+
+.footer-name:hover {
+  font-weight: 700;
+}

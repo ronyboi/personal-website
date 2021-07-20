@@ -14,11 +14,6 @@ export default function Intro1() {
         </a>
       </span>
       <span>
-        <a href="#projects" className="link">
-          Projects
-        </a>
-      </span>
-      <span>
         <a href="#resume" className="link">
           Resume
         </a>
@@ -26,6 +21,11 @@ export default function Intro1() {
       <span>
         <a href="#socials" className="link">
           Socials
+        </a>
+      </span>
+      <span>
+        <a href="#projects" className="link">
+          Projects
         </a>
       </span>
     </div>

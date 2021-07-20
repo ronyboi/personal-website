@@ -10,7 +10,6 @@ export default function Footer() {
         </a>
       </div> */}
       <div className="footer-tag">
-        Made with &#128154; by{" "}
         <a
           href="https://www.github.com/ronyboi/personal-website/"
           target="_blank"
@@ -18,7 +17,8 @@ export default function Footer() {
           className="footer-name"
         >
           Rohan Agarwal
-        </a>
+        </a>{" "}
+        @ 2021
       </div>
     </div>
   );
