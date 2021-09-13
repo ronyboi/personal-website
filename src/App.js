@@ -4,6 +4,7 @@ import Resume from "./components/Resume";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -12,14 +13,14 @@ function App() {
         <Intro />
       </section>
       <section id="skills" className="skills">
-        <h1>Skills</h1>
+        <Skills />
       </section>
       <section id="projects" className="projects">
         <Project />
       </section>
-      <section id="resume" className="resume">
+      {/* <section id="resume" className="resume">
         <Resume />
-      </section>
+      </section> */}
       <section id="socials" className="socials">
         <Social />
         <Footer />

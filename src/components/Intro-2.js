@@ -3,10 +3,10 @@ import React from "react";
 export default function Intro2() {
   return (
     <div className="bottom-right">
-      <span className="name">Rohan Agarwal</span>
-      <span>McGill University</span>
-      <span>Computer Science Student</span>
-      <span>Looking for Summer 2022 Internships</span>
+      <span className="name">rohan agarwal</span>
+      <span>mcgill university</span>
+      <span>computer science student</span>
+      <span>looking for summer 2022 internships</span>
     </div>
   );
 }

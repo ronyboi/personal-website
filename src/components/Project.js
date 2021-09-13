@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 import Info from "../assets/info.json";
-import Github from "../assets/svgs/github.svg";
-import Formula1 from "../assets/imgs/formula1.jpeg";
-import TinyUrl from "../assets/imgs/tinyurl.jpeg";
-import PersonalWeb from "../assets/imgs/personalwebsite.png";
-import ZoomAuto from "../assets/imgs/zoomautobot.png";
-import AutoFile from "../assets/imgs/autofilesorter.png";
 
 export default function Project() {
   const [info, setInfo] = useState("");
 
   const handleOnClick = (event) => {
     setInfo(event);
-    //console.log(event);
   };
 
   return (
@@ -24,7 +17,7 @@ export default function Project() {
             className="project-item"
             onClick={() => handleOnClick(Info["Formula 1"])}
           >
-            Formula 1 Statistics
+            formula 1 statistics
           </a>
         </span>
         <span>
@@ -33,7 +26,7 @@ export default function Project() {
             className="project-item"
             onClick={() => handleOnClick(Info["Url Shortener"])}
           >
-            URL Shortener
+            url shortener
           </a>
         </span>
         <span>
@@ -42,7 +35,7 @@ export default function Project() {
             className="project-item"
             onClick={() => handleOnClick(Info["Personal Website"])}
           >
-            Personal Website
+            personal website
           </a>
         </span>
         <span>
@@ -51,16 +44,18 @@ export default function Project() {
             className="project-item"
             onClick={() => handleOnClick(Info["Zoom Chat"])}
           >
-            Zoom Chat Moderator Bot
+            zoom chat moderator
           </a>
         </span>
       </div>
       <div className="project-2">
         {info ? (
           <div className="project-info">
-            <div>
-              <img className="project-github" src={Github} />
-            </div>
+            {/* <span>
+              <a href={info["githubUrl"]} className="project-item">
+                Github
+              </a>
+            </span> */}
             <span className="project-name">{info["Name"]}</span>
             <span>{info["Desc"]}</span>
             <span>{info["Tech"]}</span>

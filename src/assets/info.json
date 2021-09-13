@@ -1,26 +1,26 @@
 {
     "Formula 1":{
-        "Name":"Formula 1",
-        "Tech":"React / MongoDB / HTML / CSS",
-        "URL":"www.google.com",
-        "Desc":"A simple statistic displayer!"
+        "Name":"formula 1",
+        "Tech":"react, mongodb, html5, css",
+        "URL":"https://github.com/ronyboi/f1-stat-tracker",
+        "Desc":"a lightweight formula 1 schedule and result application"
     },
     "Url Shortener":{
-        "Name":"Url Shortener",
-        "Tech":"React",
-        "URL":"www.google.com",
-        "Desc":"Shorten your URL"
+        "Name":"url shortener",
+        "Tech":"react-browser, flask, html5",
+        "URL":"https://github.com/ronyboi/url-shortener",
+        "Desc":"a url shortener for my personal use"
     },
     "Personal Website":{
-        "Name":"Personal Website",
-        "Tech":"React",
-        "URL":"www.google.com",
-        "Desc":"More personal website"
+        "Name":"personal website",
+        "Tech":"html5, sass, react",
+        "URL":"https://github.com/ronyboi/personal-website",
+        "Desc":"this website, in order to explore web design"
     },
     "Zoom Chat":{
-        "Name":"Zoom Chat",
-        "Tech":"React",
-        "URL":"www.google.com",
-        "Desc":"Zoom Chat"
+        "Name":"zoom chat bot",
+        "Tech":"selenium, flask, react",
+        "URL":"https://github.com/ronyboi/zoomchatbot",
+        "Desc":"hackathon project to help professors moderate zoom chats"
     }
 }

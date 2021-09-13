@@ -5,27 +5,27 @@ export default function Intro1() {
     <div className="top-left">
       <span>
         <a href="#title" className="link">
-          About
+          about
         </a>
       </span>
       <span>
         <a href="#skills" className="link">
-          Skills
-        </a>
-      </span>
-      <span>
-        <a href="#resume" className="link">
-          Resume
-        </a>
-      </span>
-      <span>
-        <a href="#socials" className="link">
-          Socials
+          skills
         </a>
       </span>
       <span>
         <a href="#projects" className="link">
-          Projects
+          projects
+        </a>
+      </span>
+      <span>
+        <a href="#socials" className="link">
+          socials
+        </a>
+      </span>
+      <span>
+        <a href="/assets/Rohan_Agarwal_CV.pdf" target="blank" className="link">
+          resume
         </a>
       </span>
     </div>

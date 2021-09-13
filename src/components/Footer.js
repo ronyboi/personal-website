@@ -16,7 +16,7 @@ export default function Footer() {
           rel="noreferrer"
           className="footer-name"
         >
-          Rohan Agarwal
+          rohan agarwal
         </a>{" "}
         @ 2021
       </div>

@@ -7,7 +7,7 @@ Color Palettes
 766161
 **/
 .socials {
-  font-size: 35px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,16 +25,16 @@ Color Palettes
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .social-icon {
@@ -43,7 +43,7 @@ Color Palettes
 }
 
 .social-item {
-  font-size: 25px;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,10 +55,6 @@ Color Palettes
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background-color: #d8d3cd;
-  border: 10px solid #e1f1dd;
-  border-radius: 25px;
-  padding: 45px;
   margin: 0px;
 }
 
@@ -89,7 +85,7 @@ Color Palettes
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px;
   height: 10%;
 }
@@ -107,7 +103,7 @@ Color Palettes
 766161
 **/
 .resume {
-  font-size: 35px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +135,7 @@ Color Palettes
 }
 
 .inner-resume span {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .inner-resume .inner-resume-href {
@@ -165,6 +161,94 @@ Color Palettes
 #f7f2e7 // Background
 766161
 **/
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 40px;
+}
+
+.skill-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.skill-info .skill-name {
+  font-weight: 700;
+}
+
+.skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.skill-item {
+  position: relative;
+}
+
+.skill-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #797a7e;
+  -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.skill-item:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.skill-github {
+  width: 25px;
+  height: 25px;
+}
+
 /**
 Color Palettes
 #e0ece4 
@@ -174,7 +258,7 @@ Color Palettes
 766161
 **/
 .title {
-  font-size: 35px;
+  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,9 +282,9 @@ Color Palettes
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .link {
@@ -214,7 +298,7 @@ Color Palettes
   right: 0;
   width: 0;
   height: 2px;
-  background-color: green;
+  background-color: #797a7e;
   -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -229,7 +313,7 @@ Color Palettes
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 35px;
+  font-size: 30px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -278,7 +362,7 @@ Color Palettes
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 35px;
+  font-size: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -296,10 +380,10 @@ Color Palettes
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 35px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  font-size: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -320,9 +404,9 @@ Color Palettes
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .project-item {
@@ -336,7 +420,7 @@ Color Palettes
   right: 0;
   width: 0;
   height: 2px;
-  background-color: green;
+  background-color: #797a7e;
   -webkit-transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -366,8 +450,8 @@ Color Palettes
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Source Code Pro", sans-serif;
-  color: green;
-  line-height: 42px;
+  color: #797a7e;
+  line-height: 37px;
 }
 
 section {
@@ -381,7 +465,7 @@ a {
 }
 
 .App {
-  background-color: black;
+  background-color: #f7f2e7;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-y: scroll;
