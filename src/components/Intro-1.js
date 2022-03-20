@@ -25,7 +25,7 @@ export default function Intro1() {
       </span>
       <span>
         <a href="/assets/Rohan_Agarwal_CV.pdf" target="blank" className="link">
-          resume
+          resume (to be updated)
         </a>
       </span>
     </div>

@@ -6,7 +6,8 @@ export default function Intro2() {
       <span className="name">rohan agarwal</span>
       <span>mcgill university</span>
       <span>computer science student</span>
-      <span>looking for summer 2022 internships</span>
+      <span>infrastructure security intern @ shopify</span>
+      <span>incoming sde intern @ amazon</span>
     </div>
   );
 }

@@ -1,5 +1,29 @@
 {
-    "languages":["python", "java", "C", "html / css 5", "javascript", "sass"],
-    "developer":["vs code", "intelliJ", "android studio", "microsoft excel"],
-    "frameworks":["linux", "git", "junit", "mongoDB", "flask", "express", "node", "react", "pandas"]
+    "languages": [
+        "python",
+        "java",
+        "golang",
+        "C",
+        "html / css 5",
+        "javascript",
+        "sass"
+    ],
+    "developer": [
+        "vs code",
+        "intelliJ",
+        "android studio",
+        "microsoft excel"
+    ],
+    "frameworks": [
+        "linux",
+        "git",
+        "junit",
+        "mongoDB",
+        "flask",
+        "express",
+        "node",
+        "react",
+        "pandas",
+        "kubernetes"
+    ]
 }

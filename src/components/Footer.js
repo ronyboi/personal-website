@@ -18,7 +18,7 @@ export default function Footer() {
         >
           rohan agarwal
         </a>{" "}
-        @ 2021
+        @ 2022
       </div>
     </div>
   );
